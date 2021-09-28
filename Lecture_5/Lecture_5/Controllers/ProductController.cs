@@ -35,7 +35,30 @@ namespace Lecture_5.Controllers
             return View();
             
         }
+        [HttpGet]
 
+        public ActionResult Edit(int id)
+        {
+            Database db = new Database();
+            var p = db.Products.Get(id);
+            return View(p);
+
+        }
+        public ActionResult Update(Product p)
+        {
+            if (ModelState.IsValid)
+            {
+                Database db = new Database();
+                db.Products.Update(p);
+                return RedirectToAction("Index");
+
+            }
+            else
+            {
+                return RedirectToAction("Edit");
+            }
+           
+        }
 
     }
 }

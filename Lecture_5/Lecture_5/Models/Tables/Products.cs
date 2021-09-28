@@ -23,9 +23,29 @@ namespace Lecture_5.Models.Tables
             conn.Close();
 
         }
-        public Product Get(int Id)
+        public Product Get(int id)
         {
-            return null;
+           
+            string query = String.Format("Select * from Products where Id={0}", id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            Product p = null;
+            while (reader.Read())
+            {
+                p = new Product()
+                {
+                    Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                    Name = reader.GetString(reader.GetOrdinal("Name")),
+                    Price = reader.GetInt32(reader.GetOrdinal("Price")),
+                    Quantity = reader.GetInt32(reader.GetOrdinal("Quantity")),
+                    Description = reader.GetString(reader.GetOrdinal("Description"))
+
+                };
+            }
+            conn.Close();
+            return p;
+
         }
         public List<Product> GetAll()
         {
@@ -52,13 +72,14 @@ namespace Lecture_5.Models.Tables
             return products;
         }
 
-        public Product Edit(int Id)
+      
+        public void Update(Product p)
         {
-            return null;
-        }
-        public Product Update()
-        {
-            return null;
+            string query = String.Format("Update Products SET Name='{0}',Price ={1},Quantity ={2},Description ='{3}'where Id={4},id", p.Name, p.Price, p.Quantity, p.Description);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
         }
         public Product Delete(int Id)
         {

@@ -1,27 +1,27 @@
 ﻿@model Lecture_5.Models.Entity.Product
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit";
 }
 
-<h2>Create</h2>
+<h2>Edit</h2>
 
-<form action="/Product/Create" method="post">
+<form action="/Product/Update" method="post">
     <label>Name</label>
-    <input type="text" name="Name"  class="form-control" />
+    <input type="text" name="Name" value="@Model.Name" class="form-control" />
     @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
     <br />
     <label>Price</label>
-    <input type="number" name="Price"  class="form-control" />
+    <input type="number" name="Price" value="@Model.Price" class="form-control" />
     @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
     <br />
     <label>Quantity</label>
-    <input type="number" name="Quantity" class="form-control" />
+    <input type="number" name="Quantity"  value="@Model.Quantity" class="form-control" />
     @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
     <br />
     <label>Description</label>
-    <input type="text" name="Description"  class="form-control" />
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
     @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
     <br />
-    <input type="Submit" value="Add" class="btn btn-success" />
+    <input type="Submit" value="Update" class="btn btn-success" />
 </form>
 
