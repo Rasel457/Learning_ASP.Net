@@ -4,16 +4,18 @@
 }
 
 <h2>Index</h2>
-<a href="/Products/Create" class="btn btn-primary">Add Product</a>
-<br />
+<a href="/Product/Create" class="btn btn-primary">Add Product</a>
+<br /><br />
 
-<table class="table table-strriped">
+<table class="table table-hover">
     <tr>
         <th>Id</th>
         <th>Name</th>
         <th>Price</th>
         <th>Quantity</th>
         <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -23,6 +25,8 @@
             <td>@item.Price</td>
             <td>@item.Quantity</td>
             <td>@item.Description</td>
+            <td><a href="" class="btn btn-primary">Edit</a></td>
+            <td><a href="" class="btn btn-danger">Delete</a></td>
         </tr>
     }
 </table>

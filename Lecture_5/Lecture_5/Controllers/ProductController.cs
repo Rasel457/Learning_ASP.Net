@@ -25,9 +25,15 @@ namespace Lecture_5.Controllers
         [HttpPost]
         public ActionResult Create(Product p)
         {
-            Database db = new Database();
-            db.Products.Add(p);
+            if (ModelState.IsValid)
+            {
+                Database db = new Database();
+                db.Products.Add(p);
+                return RedirectToAction("Index");
+
+            }
             return View();
+            
         }
 
 

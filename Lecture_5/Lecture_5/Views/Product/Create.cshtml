@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Lecture_5.Models.Entity.Product
+@{
     ViewBag.Title = "Create";
 }
 
@@ -7,15 +8,19 @@
 <form action="/Product/Create" method="post">
     <label>Name</label>
     <input type="text" name="Name" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
     <br />
     <label>Price</label>
     <input type="number" name="Price" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
     <br />
     <label>Quantity</label>
     <input type="number" name="Quantity" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
     <br />
     <label>Description</label>
     <input type="text" name="Description" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
     <br />
     <input type="Submit" value="Add" class="btn btn-success" />
 </form>
