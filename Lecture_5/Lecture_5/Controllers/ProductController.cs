@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.Mvc;
 using Lecture_5.Models.Entity;
 using Lecture_5.Models;
+using System.Web.Script.Serialization;
+
+
+
 namespace Lecture_5.Controllers
 {
     public class ProductController : Controller
@@ -70,8 +74,45 @@ namespace Lecture_5.Controllers
         {
             Database db = new Database();
             var p = db.Products.GetItem(id);
-            return View(p);
+            if (p != null)
+            {
+                List<Product> Products = new List<Product>();
+                if (Session["cart"] == null)
+                {
+                    Products.Add(p);
+                    string j_string = new JavaScriptSerializer().Serialize(Products);
+                    Session["cart"] = j_string;
+                    Session["flag"] = null;
+                    return RedirectToAction("List");
 
+                }
+                else
+                {
+                    var j_String = Session["cart"].ToString();
+                    var val = new JavaScriptSerializer().Deserialize<List<Product>>(j_String);
+                    val.Add(p);
+                    Session["cart"] = new JavaScriptSerializer().Serialize(val);
+                    return RedirectToAction("List");
+
+                }
+                
+            }
+            return RedirectToAction("List");
+
+
+        }
+        public ActionResult Checkout()
+        {
+            if (Session["cart"] != null)
+            {
+                var products = new JavaScriptSerializer().Deserialize<List<Product>>(Session["cart"].ToString());
+
+
+                return View(products);
+
+            }
+            Session["Message"] = "True";
+            return Redirect("/product/List");
         }
     }
 }
