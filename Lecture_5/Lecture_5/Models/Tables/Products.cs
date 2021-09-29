@@ -16,7 +16,7 @@ namespace Lecture_5.Models.Tables
         }
         public void Add(Product p)
         {
-            string query = String.Format("insert into Products values('{0}',{1},{2},'{3}')", p.Name, p.Price, p.Quantity,p.Description);
+            string query = String.Format("insert into Products values('{0}',{1},{2},'{3}')", p.Name, p.Price, p.Quantity, p.Description);
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -25,7 +25,7 @@ namespace Lecture_5.Models.Tables
         }
         public Product Get(int id)
         {
-           
+
             string query = String.Format("Select * from Products where Id={0}", id);
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Open();
@@ -72,18 +72,52 @@ namespace Lecture_5.Models.Tables
             return products;
         }
 
-      
+
         public void Update(Product p)
         {
-            string query = String.Format("Update Products SET Name='{0}',Price ={1},Quantity ={2},Description ='{3}'where Id={4},id", p.Name, p.Price, p.Quantity, p.Description);
+            string query = String.Format("update Products set Name='{0}', Price={1}, Quantity={2}, Description='{3}' where Id={4}", p.Name, p.Price, p.Quantity, p.Description, p.Id);
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
         }
-        public Product Delete(int Id)
+        public void Delete(int id)
         {
-            return null;
+
+            string query = String.Format("delete from products where Id={0}", id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+
         }
+
+        public Product GetItem(int id)
+        {
+
+            string query = String.Format("Select * from Products where Id={0}", id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            Product p = null;
+            while (reader.Read())
+            {
+                p = new Product()
+                {
+                    Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                    Name = reader.GetString(reader.GetOrdinal("Name")),
+                    Price = reader.GetInt32(reader.GetOrdinal("Price")),
+                    Quantity = reader.GetInt32(reader.GetOrdinal("Quantity")),
+                    Description = reader.GetString(reader.GetOrdinal("Description"))
+
+                };
+            }
+            conn.Close();
+            return p;
+
+        }
+
+
     }
 }

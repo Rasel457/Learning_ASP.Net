@@ -10,12 +10,12 @@ namespace Lecture_5.Controllers
     public class ProductController : Controller
     {
         // GET: Product
-        public ActionResult Index()
+        public ActionResult List()
         {
             Database db = new Database();
             var products = db.Products.GetAll();
             return View(products);
-           
+
         }
         [HttpGet]
         public ActionResult Create()
@@ -29,11 +29,11 @@ namespace Lecture_5.Controllers
             {
                 Database db = new Database();
                 db.Products.Add(p);
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
 
             }
             return View();
-            
+
         }
         [HttpGet]
 
@@ -44,21 +44,34 @@ namespace Lecture_5.Controllers
             return View(p);
 
         }
-        public ActionResult Update(Product p)
+        [HttpPost]
+        public ActionResult Edit(Product p)
         {
             if (ModelState.IsValid)
             {
                 Database db = new Database();
                 db.Products.Update(p);
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
 
             }
-            else
-            {
-                return RedirectToAction("Edit");
-            }
-           
+            return View();
+
         }
 
+        public ActionResult Delete(int id)
+        {
+            Database db = new Database();
+            db.Products.Delete(id);
+
+            return RedirectToAction("List");
+        }
+
+        public ActionResult Cart(int id)
+        {
+            Database db = new Database();
+            var p = db.Products.GetItem(id);
+            return View(p);
+
+        }
     }
 }
