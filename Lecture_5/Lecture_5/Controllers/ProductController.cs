@@ -6,13 +6,17 @@ using System.Web.Mvc;
 using Lecture_5.Models.Entity;
 using Lecture_5.Models;
 using System.Web.Script.Serialization;
+using Lecture_5.Auth;
 
 
 
 namespace Lecture_5.Controllers
 {
+    [AdminAccess]
+    //[Authorize]
     public class ProductController : Controller
     {
+       [AllowAnonymous]
         // GET: Product
         public ActionResult List()
         {
@@ -69,7 +73,7 @@ namespace Lecture_5.Controllers
 
             return RedirectToAction("List");
         }
-
+        [AllowAnonymous]
         public ActionResult Cart(int id)
         {
             List<Product> Products = null;
@@ -96,7 +100,7 @@ namespace Lecture_5.Controllers
 
             }
         }
-
+        
         [HttpPost]
         public ActionResult Card()
         {

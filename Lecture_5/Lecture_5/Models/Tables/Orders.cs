@@ -18,7 +18,7 @@ namespace Lecture_5.Models.Tables
         {
             foreach (var p in products)
             {
-                string query = String.Format("insert into Orders values('{0}',{1},{2})", p.Name, p.Price, p.Quantity);
+                string query = String.Format("insert into Orders values('{0}',{1},{2},{3},'{4}')", p.Name, p.Price, p.Quantity, HttpContext.Current.Session["customerId"], "Ordered");
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
