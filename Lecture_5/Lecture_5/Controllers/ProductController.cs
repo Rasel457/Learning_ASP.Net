@@ -72,47 +72,44 @@ namespace Lecture_5.Controllers
 
         public ActionResult Cart(int id)
         {
+            List<Product> Products = null;
             Database db = new Database();
             var p = db.Products.GetItem(id);
-            if (p != null)
+           
+            
+            if (Session["cart"] == null)
             {
-                List<Product> Products = new List<Product>();
-                if (Session["cart"] == null)
-                {
-                    Products.Add(p);
-                    string j_string = new JavaScriptSerializer().Serialize(Products);
-                    Session["cart"] = j_string;
-                    Session["flag"] = null;
-                    return RedirectToAction("List");
+                Products = new List<Product>();
+                Products.Add(p);
+                string j_string = new JavaScriptSerializer().Serialize(Products);
+                Session["cart"] = j_string;
+                return View(Products);
 
-                }
-                else
-                {
-                    var j_String = Session["cart"].ToString();
-                    var val = new JavaScriptSerializer().Deserialize<List<Product>>(j_String);
-                    val.Add(p);
-                    Session["cart"] = new JavaScriptSerializer().Serialize(val);
-                    return RedirectToAction("List");
-
-                }
-                
             }
-            return RedirectToAction("List");
+            else
+            {
+                var j_String = Session["cart"].ToString();
+                var val= new JavaScriptSerializer().Deserialize<List<Product>>(j_String);
+                val.Add(p);
+                Session["cart"] = new JavaScriptSerializer().Serialize(val);
+                return View(val);
 
-
+            }
         }
-        public ActionResult Checkout()
+
+        [HttpPost]
+        public ActionResult Card()
         {
-            if (Session["cart"] != null)
-            {
-                var products = new JavaScriptSerializer().Deserialize<List<Product>>(Session["cart"].ToString());
+            List<Product> products = new List<Product>();
+            var item = Session["cart"].ToString();
+            products = new JavaScriptSerializer().Deserialize<List<Product>>((string)item);
 
+            Database db = new Database();
+            db.Orders.AddOrderToCart(products);
 
-                return View(products);
+            Session["cart"] = null;
 
-            }
-            Session["Message"] = "True";
-            return Redirect("/product/List");
+            return RedirectToAction("List");
         }
     }
 }

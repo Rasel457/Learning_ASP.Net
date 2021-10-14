@@ -6,20 +6,6 @@
 <span id="empty"></span>
 
 <h2>List</h2>
-@*<a href="/Product/Create" class="btn btn-primary">Add Product</a>*@
-<a href="/Product/Checkout" class="btn btn-warning">Checkout </a>
-@if (Session["flag"] == null)
-{
-    <script type="text/javascript">
-        var a = document.getElementById('empty');
-        a.innerHTML = '<span class="alert alert-warning text-warning" role="alert"><strong> Cart is Empty</strong> </span >';
-
-    </script>
-}
-
-<br /><br />
-
-
 
 <table class="table table-hover">
     <tr>

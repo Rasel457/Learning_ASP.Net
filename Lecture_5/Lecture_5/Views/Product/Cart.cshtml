@@ -1,0 +1,21 @@
+﻿@model List<Lecture_5.Models.Entity.Product>
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h2>Cart</h2>
+
+
+<form action="/Product/Card" method="post">
+    @foreach (var item in Model)
+    {
+        <p>Name: @item.Name</p>
+        <p>Price: @item.Price</p>
+        <p>Quantity: @item.Quantity</p><br />
+
+    }
+    <input type="submit" value="Checkout" class="btn btn-info" />
+</form>
+
+
+
