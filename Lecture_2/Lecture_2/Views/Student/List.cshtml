@@ -1,0 +1,27 @@
+﻿@model List<Lecture_2.Models.Student>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<table class="table table-stripped">
+    <tr>
+        <td>Name</td>
+        <td>Id</td>
+        <td>Dob</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Id</td>
+            <td>@item.Dob</td>
+        </tr>
+
+    }
+
+</table>
+
+
+
