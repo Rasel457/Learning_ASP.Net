@@ -46,7 +46,11 @@
   <ItemGroup>
     <Compile Include="BEnt\CatagoryModel.cs" />
     <Compile Include="BEnt\CatagoryService.cs" />
+    <Compile Include="BEnt\CommentModel.cs" />
     <Compile Include="BEnt\NewsModel.cs" />
+    <Compile Include="BEnt\NewsWithInfoModel.cs" />
+    <Compile Include="BEnt\ReactModel.cs" />
+    <Compile Include="BEnt\UserModel.cs" />
     <Compile Include="NewsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

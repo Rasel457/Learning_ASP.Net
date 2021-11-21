@@ -39,12 +39,29 @@ namespace NewsPortal.Controllers
             //return id;
         }
 
-        [Route("api/News/{catagory}")]
+        [Route("api/News/Catagory{catagory}")]
         [HttpGet]
         public List<NewsModel> GetNewsByCata([FromUri] string catagory)
         {
             return NewsService.GetNewsByCatagory(catagory);
 
         }
+
+        [Route("api/News/Date/{date}")]
+        [HttpGet]
+        public List<NewsModel> GetNewsByDate([FromUri] DateTime date)
+        {
+            return NewsService.GetNewsByDate(date);
+
+        }
+
+        [Route("api/News/Catagory/Date/{cata}/{date}")]
+        [HttpGet]
+        public List<NewsModel> GetNewsByDateAndCata([FromUri] string cata, DateTime date)
+        {
+            return NewsService.GetNewsByDateAndCatagory(cata,date);
+
+        }
+
     }
 }

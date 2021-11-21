@@ -12,3 +12,17 @@ E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\NewsPortal\BLL\obj\Debug\BLL.csproj.Cor
 E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\NewsPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\NewsPortal\BLL\obj\Debug\BLL.dll
 E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\NewsPortal\BLL\obj\Debug\BLL.pdb
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\BLL.dll
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\BLL.pdb
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\AutoMapper.dll
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\DAL.dll
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\EntityFramework.dll
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\DAL.pdb
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\DAL.dll.config
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\AutoMapper.xml
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\bin\Debug\EntityFramework.xml
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\obj\Debug\BLL.dll
+E:\11TH SEMISTER MID\.Net\AP.net_lab\Learning_ASP.Net\Final_Term\NewsPortal\BLL\obj\Debug\BLL.pdb
