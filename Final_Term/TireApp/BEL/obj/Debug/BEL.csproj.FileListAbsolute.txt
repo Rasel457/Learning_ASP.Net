@@ -1,0 +1,6 @@
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\bin\Debug\BEL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\bin\Debug\BEL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\obj\Debug\BEL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BEL\obj\Debug\BEL.pdb

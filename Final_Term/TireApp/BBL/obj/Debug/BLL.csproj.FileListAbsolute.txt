@@ -1,0 +1,16 @@
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\BBL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\BBL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\AutoMapper.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\BEL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\DAL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\EntityFramework.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\BEL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\DAL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\DAL.dll.config
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\AutoMapper.xml
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\bin\Debug\EntityFramework.xml
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\obj\Debug\BLL.csproj.CopyComplete
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\obj\Debug\BBL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\TireApp\BBL\obj\Debug\BBL.pdb
