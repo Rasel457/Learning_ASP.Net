@@ -1,0 +1,32 @@
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\BLL.dll
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\BLL.pdb
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\AutoMapper.dll
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\BEL.dll
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\DAL.dll
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\EntityFramework.dll
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\BEL.pdb
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\DAL.pdb
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\DAL.dll.config
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\AutoMapper.xml
+F:\Teaching\fall\DemoApp\BLL\bin\Debug\EntityFramework.xml
+F:\Teaching\fall\DemoApp\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\Teaching\fall\DemoApp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\Teaching\fall\DemoApp\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\Teaching\fall\DemoApp\BLL\obj\Debug\BLL.dll
+F:\Teaching\fall\DemoApp\BLL\obj\Debug\BLL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\BLL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\BLL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\AutoMapper.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\BEL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\DAL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\EntityFramework.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\BEL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\DAL.pdb
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\DAL.dll.config
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\AutoMapper.xml
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\bin\Debug\EntityFramework.xml
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\obj\Debug\BLL.dll
+E:\11 TH SEMESTER FINAL\ASP.NET\.Net Lab\blog_api-master\BLL\obj\Debug\BLL.pdb
